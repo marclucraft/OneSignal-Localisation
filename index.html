@@ -93,7 +93,7 @@
 				// Occurs when the user's subscription changes to a new value.
 				OneSignal.on('subscriptionChange', function (isSubscribed) {
 					if (isSubscribed) {
-						OneSignal.getUserID().then(result =>
+						OneSignal.getUserId().then(result =>
 							alert('Your player_id is', result)
 						);
 					}
