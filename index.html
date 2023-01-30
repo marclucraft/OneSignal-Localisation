@@ -88,5 +88,14 @@
 				<h1 class="type">Hello, World!</h1>
 			</div>
 		</div>
+		<script>
+			OneSignal.push([
+				'getNotificationPermission',
+				function (permission) {
+					console.log('Site Notification Permission:', permission);
+					// (Output) Site Notification Permission: default
+				},
+			]);
+		</script>
 	</body>
 </html>
